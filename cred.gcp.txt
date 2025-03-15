@@ -1,0 +1,1 @@
+Credentials saved to file: [/Users/mohamedaboelnil/.config/gcloud/application_default_credentials.json]
