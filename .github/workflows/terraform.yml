@@ -42,6 +42,9 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
+
+ 
+
 name: 'Terraform'
 
 on:
@@ -83,3 +86,6 @@ jobs:
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
+
+    - name: Set output
+      run: echo "output_name=value" >> $GITHUB_ENV
