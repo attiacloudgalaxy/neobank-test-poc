@@ -87,5 +87,5 @@ jobs:
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
 
-    - name: Set output
-      run: echo "output_name=value" >> $GITHUB_ENV
+    #- name: Set output
+      #run: echo "output_name=value" >> $GITHUB_ENV
